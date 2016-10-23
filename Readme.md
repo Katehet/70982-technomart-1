@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Sergey Vikhrov](https://up.htmlacademy.ru/htmlcss/15/user/70982).
-* Наставник: `Неизвестно`.
+* Наставник: [Keks](https://github.com/keksobot).
 
 ---
 
