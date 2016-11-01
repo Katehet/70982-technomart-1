@@ -1,0 +1,149 @@
+body {
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	font-weight: normal;
+	font-family: Cuprum, sans-serif;
+}
+.pop-title span {
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+}
+.block-title {
+	font-size: 30px;
+	line-height: 30px;
+	color: #000000;
+}
+/*ДЗ выше*/
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+.top-menu {
+	width: auto;
+	margin-bottom: 44px;
+	outline: 1px dashed; /*Временный стиль*/
+}
+.top-menu a{
+	float: right
+}
+.logo, .top-search {
+	display: inline-block;
+	vertical-align: middle;
+}
+.back-header {
+	width: auto;
+}
+.back-header p {
+	display: inline-block;
+	vertical-align: middle;
+	width: 200px;
+	font-size: 16px;
+	line-height: 23px;
+	outline: 1px dashed; /*Временный стиль*/
+}
+.back-header .top-contacts {
+	display: inline-block;
+	vertical-align:text-bottom;
+	outline: 1px dashed; /*Временный стиль*/
+}
+.check-in, .log-in {
+	float: right;
+	outline: 1px dashed; /*Временный стиль*/
+}
+.main-menu {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	text-align: center;
+	outline: 1px dashed; /*Временный стиль*/
+}
+.main-menu li {
+	display: inline-block;
+	
+}
+.main-menu a{
+	margin-right: 60px; /*Почти все отступы разные!*/
+}
+/* - Конец хедера - */
+.promo .promo-item {
+	display: inline-block;
+	width: 300px;
+	height: 123px;
+	
+	outline: 1px dashed #ccc;
+}
+.promo {
+	margin-bottom: 40px;
+}
+.promo .slider {
+	float: left;
+	width: 620px;
+}
+/* - Блок Популярные товары - */
+.pop-title {
+	margin-bottom: 20px;
+	outline: 1px dashed; /*Временный стиль*/
+}
+.pop-title a {
+	float: right;
+}
+.item {
+	display: inline-block;
+	vertical-align: middle;
+	width: 220px;
+	min-height: 260px;
+	outline: 1px dashed; /*Временный стиль*/
+	/*font*/
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.item .item-name {
+	width: 156px;
+	margin: 0 auto;
+	
+}
+.item .item-name div{
+	width: 80px;
+	margin: 0 auto;
+}
+.item .price {
+	width: 120px;
+	margin: 0 auto;
+	text-align: center;
+}
+.brand {
+	display: inline-block;
+	width: 220px;
+	min-height: 145px;
+	text-align: center;
+	vertical-align:middle;
+	outline: 1px dashed; /*Временный стиль*/
+}
+.services .good-services {
+	width: 400px;
+	outline: 1px dashed; /*Временный стиль*/
+}
+.services .container>ul {
+	displa: inline-block;
+	
+	outline: 1px dashed; /*Временный стиль*/
+}
+.serv-active ul{
+	/*position: absolute;*/
+	float: right;
+	left: 350px;
+}
+.serv-active .shipping {
+	display: inline-block;
+}
+.serv-active ul p{
+	width: 280px;
+}
