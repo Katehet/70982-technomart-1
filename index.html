@@ -40,7 +40,7 @@
 	  		<ul>
 					<li><a href="index.html">Главная</a></li>
 		  		<li><a href="#">Компания</a></li>
-					<li><a href="#">Каталог</a></li>
+					<li><a href="../catalog.html">Каталог</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Спецпредложения</a></li>
 					<li><a href="#">Доставка</a></li>
@@ -173,7 +173,7 @@
   				<label for="tab-2">Гарантия</label>
   				<label for="tab-3">Кредит</label>
 				</div>
-				<div class="shadow"><img src="img/shadow.png" alt="img" width="10" height="272"></div>
+				<div class="shadow"><img src="img/tab-shadow.png" alt="img" width="10" height="272"></div>
 				<div class="info">
 					<div class="delivery clearfix">
 						<div class="tab-img"><img src="img/back-tab-1.jpg" alt="img" width="446" height="256"></div>
@@ -207,6 +207,7 @@
 			</div>
 		  </div>
 	</section>
+		<div class="container">
 	<section class="info-block">	
 		<div class="cotainer clearfix">
 			 <div class="about">
@@ -230,6 +231,7 @@
 			  </div>
 		  </div>
 	</section>
+		</div>
 	</main>
 	<footer class="main-footer">
 	<section class="bottom-menu">
@@ -275,5 +277,34 @@
 			</div>
 		</div>
 	</footer>
+		<section class="modal-write-us">
+		<button type="button" class="modal-close"></button>
+		<form action="" method="post">
+			<div class="input-block">
+			<label>Ваше имя:</label><input type="text" placeholder="Представьтесь, пожалуйста">
+			</div>
+			<div class="input-block">
+			<label>Ваш e-mail:</label><input type='email' placeholder="Для отправки ответа">
+			</div>
+			<label>Текст письма:</label><textarea placeholder="В свободной форме"></textarea>
+			<input type="submit" value="Отправить">
+		</form>
+			<div class="modal-bottom">
+			</div>
+	</section>
+		<script>
+			var link = document.querySelector(".contacts-btn");
+			var popup = document.querySelector(".modal-write-us");
+			var close = document.querySelector(".modal-close");
+
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.add("modal-write-us-show");
+			});
+			close.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.remove("modal-write-us-show");
+			});
+		</script>
   </body>
 </html>
