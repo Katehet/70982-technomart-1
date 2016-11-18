@@ -90,8 +90,8 @@
 							</div>
 							<div class="power"><span>Питание:</span>	
 									<ul>
-										<li><label><input name="power" id="power" type="radio" value="battery" checked>Аккумуляторные</label></li>
-										<li><label><input name="power" id="power" type="radio" value="ac">Сетевые</label></li>
+										<li><input name="power" id="p-batt" type="radio" value="battery" checked><label for="p-batt">Аккумуляторные</label></li>
+										<li><input name="power" id="p-ac" type="radio" value="ac"><label for="p-ac">Сетевые</label></li>
 									</ul>
 							</div>
 							<input type="submit" name="filter-btn" value="Показать">
@@ -249,7 +249,7 @@
 				<ul class="bottom-nav1">
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Новости</a></li>
-					<li><a href="Catalog.html">Каталог</a></li>
+					<li><a>Каталог</a></li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
@@ -285,5 +285,34 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal-order">
+		<button type="button" class="modal-close"></button>
+		<div class="message">Товар добавлен в корзину!</div>
+		<div class="modal-bottom">
+			<form action="" method="post">
+				<button type="button" class="modal-btn checkout-btn">Оформить заказ</button>
+				<button type="button" class="modal-btn keep-on-btn">Продолжить покупки</button>
+			</form>
+			</div>
+	</div>
+		<script>
+			var link = document.querySelector(".buy-it-btn");
+			var popup = document.querySelector(".modal-order");
+			var close = document.querySelector(".modal-close");
+			var closeagain = document.querySelector(".keep-on-btn")
+			
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.add("modal-order-show");
+			});
+			close.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.remove("modal-order-show");
+			});
+			closeagain.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.remove("modal-order-show");
+			});
+		</script>
 	</body>
 </html>

@@ -1078,7 +1078,7 @@ input[type="radio"] {
 	color: #ee3643;
 }
 
-/* - >>> СТИЛИ ДЛЯ CATALOG.HTML <<< - */
+									/* - >>> СТИЛИ ДЛЯ CATALOG.HTML <<< - */
 /* AUTHORIZATION */
 .basket.active{
 	background-color: #ee3643;
@@ -1142,6 +1142,7 @@ input[type="radio"] {
 }
 
 /* - // - */
+
 .breadcrumbs {
 	margin: 0px;
 	padding: 0px;
@@ -1176,7 +1177,9 @@ input[type="radio"] {
 	margin-left: -2px;
 	letter-spacing: 0.3px;
 }
+
 /* - // - */
+
 .page-title {
 	margin: 20px 0;
 	padding: 30px;
@@ -1187,7 +1190,9 @@ input[type="radio"] {
 	background-color: #f2f6f8;
 	text-transform: uppercase;
 }
+
 /* - КОЛОНКА ФИЛЬТРОВ - */
+
 .filters {
 	float: left;
 	width: 220px;
@@ -1299,23 +1304,43 @@ input[type="radio"] {
 	margin-left: 35px;
 }
 .producers label::before {
-	content: url(../img/icon-check-off.png);
+	content: url(../img/check-off-active.png);
   position: absolute;
   left: 0px;
+	cursor: pointer;
+}
+.producers label:hover::before {
+	content: url(../img/check-off-hover.png);
+  position: absolute;
+  left: 0px;
+	cursor: pointer;
 }
 .producers li {
 	letter-spacing: 0.7px;
 }
 .filters input[type="checkbox"]:checked ~ label::before {
-	content: url(../img/icon-check-on.png);
+	content: url(../img/check-on-active.png);
+}
+.filters input[type="checkbox"]:checked ~ label:hover::before {
+	content: url(../img/check-on-hover.png);
 }
 .power label::before {
-	content: url(../img/icon-circle.png);
+	content: url(../img/radio-off-active.png);
   position: absolute;
   left: 0px;
+	cursor: pointer;
 }
-.filters input[type="radio"]:checked ~ .power label::before {
-	content: url(../img/icon-circle-dot.png);
+.power label:hover::before {
+	content: url(../img/radio-off-hover.png);
+  position: absolute;
+  left: 0px;
+	cursor: pointer;
+}
+.filters input[type="radio"]:checked ~ label::before {
+	content: url(../img/radio-on-active.png);
+}
+.filters input[type="radio"]:checked ~ label:hover::before {
+	content: url(../img/radio-on-hover.png);
 }
 .filters input[type="submit"] {
 	margin-top: 58px;
@@ -1459,6 +1484,20 @@ input[type="radio"] {
 	line-height: 24px;
 	font-family: "PT Sans", serif;
 	letter-spacing: 0.2px;
+}
+/* - OVERLAY - */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+.modal-overlay-show {
+	display: block;
 }
 /* - POPUP - */
 
@@ -1620,4 +1659,19 @@ input[type="radio"] {
 	background-color: #ee3643;
 	color: #ffffff;
 	margin-right: 20px;
+}
+
+		/* POPUP-MAP */
+.modal-map {
+	position: fixed;
+	top:50%;
+	left: 50%;
+	margin-top: -180px;
+	margin-left: -470px;
+	width: 940px;
+	height: 446px;
+	background: #e9e5dc url("../img/modal-map.jpg");
+	border: 7ps solid #ffffff;
+	box-shadow: 0 30px 50px rgba(0,0,0, 0.7);
+		
 }
