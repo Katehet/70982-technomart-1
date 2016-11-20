@@ -109,6 +109,12 @@ input[type="search"]:focus {
 input[type="search"]:focus+.icon-search {
 	color: #ee3643;
 }
+::-webkit-input-placeholder {
+	font-size: 13px;
+}
+:focus::-webkit-input-placeholder {
+	color: transparent;
+}
 /* -- */
 .user-menu {
 	float: right;
@@ -1079,6 +1085,7 @@ input[type="radio"] {
 }
 
 									/* - >>> СТИЛИ ДЛЯ CATALOG.HTML <<< - */
+
 /* AUTHORIZATION */
 .basket.active{
 	background-color: #ee3643;
@@ -1503,11 +1510,13 @@ input[type="radio"] {
 
 .modal-write-us {
 	display: none;
-	position: absolute;
+	position: fixed;
 	width: 622px;
 	height: 430px;
-	bottom: 200px;
-	left: 322px;
+	top: 50%;
+	left: 50%;
+	margin-top: -170px;
+	margin-left: -310px;
 	background-color: #ffffff;
 	z-index: 100;
 	box-shadow: 0 10px 40px #1a1a1a;
@@ -1518,16 +1527,11 @@ input[type="radio"] {
 }
 .modal-write-us-show {
 	display: block;
+	animation: bounce 0.5s;
 }
 .modal-write-us form {
 	width: 460px;
 	margin: 45px auto;
-}
-::-webkit-input-placeholder {
-	font-size: 13px;
-}
-:focus::-webkit-input-placeholder {
-	color: transparent;
 }
 .modal-write-us .input-block {
 	float: left;
@@ -1599,6 +1603,7 @@ input[type="radio"] {
 	height: 5px;
 	background-color: red;
 	border-radius: 1px;
+	font-size: 
 }
 .modal-close::before {
 	transform: rotate(45deg);
@@ -1663,6 +1668,7 @@ input[type="radio"] {
 
 		/* POPUP-MAP */
 .modal-map {
+	display: none;
 	position: fixed;
 	top:50%;
 	left: 50%;
@@ -1670,8 +1676,44 @@ input[type="radio"] {
 	margin-left: -470px;
 	width: 940px;
 	height: 446px;
+	z-index: 100;
 	background: #e9e5dc url("../img/modal-map.jpg");
 	border: 7ps solid #ffffff;
 	box-shadow: 0 30px 50px rgba(0,0,0, 0.7);
-		
+}
+.modal-map-show {
+	display: block;
+}
+
+		/* ANIMATION */
+
+@keyframes bounce {
+	0% {
+		transform: translateX(-2000%);
+	}
+	70% {
+		transform: translateX(30%);
+	}
+	90% {
+		transform: translateX(-10%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+		/* Invalid data */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+.modal-error {
+	animation: shake 0.5s;
 }

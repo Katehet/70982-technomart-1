@@ -285,6 +285,8 @@
 			</div>
 		</div>
 	</footer>
+		
+		<!- *** ->
 	<div class="modal-order">
 		<button type="button" class="modal-close"></button>
 		<div class="message">Товар добавлен в корзину!</div>
@@ -295,24 +297,9 @@
 			</form>
 			</div>
 	</div>
-		<script>
-			var link = document.querySelector(".buy-it-btn");
-			var popup = document.querySelector(".modal-order");
-			var close = document.querySelector(".modal-close");
-			var closeagain = document.querySelector(".keep-on-btn")
-			
-			link.addEventListener("click", function(event) {
-				event.preventDefault();
-				popup.classList.add("modal-order-show");
-			});
-			close.addEventListener("click", function(event) {
-				event.preventDefault();
-				popup.classList.remove("modal-order-show");
-			});
-			closeagain.addEventListener("click", function(event) {
-				event.preventDefault();
-				popup.classList.remove("modal-order-show");
-			});
-		</script>
+		
+		<!- *** ->
+		<script src="js/popup_cat.js"></script>
+		
 	</body>
 </html>
