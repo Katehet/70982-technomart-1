@@ -1,3 +1,28 @@
+			var buyIt = document.querySelector(".buy-it-btn");
+			var bookIt = document.querySelector(".book-it-btn");
+			var popupBuy = document.querySelector(".modal-order");
+			var closePopup = document.querySelector(".modal-close");
+			var closeToo = document.querySelector(".keep-on-btn");
+
+				// BOOK THE GOOD
+			
+			buyIt.addEventListener("click", function(event) {
+			event.preventDefault();
+			popupBuy.classList.add("modal-order-show");
+			});
+			bookIt.addEventListener("click", function(event) {
+				event.preventDefault();
+				popupBuy.classList.add("modal-order-show");
+			});
+			closePopup.addEventListener("click", function(event) {
+				event.preventDefault();
+				document.classList.remove("modal-order-show");
+			});
+			closeToo.addEventListener("click", function(event) {
+				event.preventDefault();
+				popupBuy.classList.remove("modal-order-show");
+			});
+
 			var link = document.querySelector(".contacts-btn");
 			var popup = document.querySelector(".modal-write-us");
 			var close = document.querySelector(".modal-close");
@@ -10,7 +35,7 @@
 			var openMap = document.querySelector(".map");
 			var popupMap = document.querySelector(".modal-map");
 			var closeMap = popupMap.querySelector(".modal-close");
-			
+
 			link.addEventListener("click", function(event) {
 				event.preventDefault();
 				popup.classList.add("modal-write-us-show");
