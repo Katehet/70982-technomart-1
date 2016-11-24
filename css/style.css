@@ -504,7 +504,7 @@ main {
 	background: #cfbda7 url("../img/drill-1.jpg");
 }
 .promo .slide:nth-child(2) {
-	background: #644b35 url("../img/drill-2.jp");
+	background: #644b35 url("../img/drill-2.jpg");
 }
 .promo .slide {
 	display: none;
@@ -515,10 +515,10 @@ main {
 #toggle-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
-#toggle-1:checked ~ .slider-controls label [for="toggle-1"] {
+#toggle-1:checked ~ .slider-controls label[for="toggle-1"] {
 	background-color: #ee3643;
 }
-#toggle-2:checked ~ .slider-controls label [for="toggle-2"] {
+#toggle-2:checked ~ .slider-controls label[for="toggle-2"] {
 	background-color: #ee3643;
 }
 .pop-goods {
@@ -575,7 +575,7 @@ main {
   color: #000000;
 	border: 1px solid #e5e5e5;
 }
-.item:nth-child(4n+1) {
+.pop-goods .item:nth-child(4n+1) {
 	margin-right: 0px;
 }
 .item-menu {
@@ -688,7 +688,9 @@ main {
   border-left-color: #ee3643;
 	border-radius: 4px;
 }
-/* - Блок Популярные производители - */
+
+			/* - Блок Популярные производители - */
+
 .pop-brands {
 	font-size: 0px;
 }
@@ -791,9 +793,9 @@ input[type="radio"] {
   position: absolute;
   display: none;
 }
-.tabs label [for="tab-1"],
-.tabs label [for="tab-2"],
-.tabs label [for="tab-3"] {
+.tabs label[for="tab-1"],
+.tabs label[for="tab-2"],
+.tabs label[for="tab-3"] {
   display: block;
   padding: 10px 0 12px 22px;
   font-size: 21px;
@@ -808,15 +810,15 @@ input[type="radio"] {
 .tabs label:hover {
 	background-color: #293449;
 }
-#tab-1:checked ~ .tabs label [for="tab-1"],
-#tab-2:checked ~ .tabs label [for="tab-2"],
-#tab-3:checked ~ .tabs label [for="tab-3"] {
+#tab-1:checked ~ .tabs label[for="tab-1"],
+#tab-2:checked ~ .tabs label[for="tab-2"],
+#tab-3:checked ~ .tabs label[for="tab-3"] {
   color: #32425c;
   background-color: #fff;
   border-top: 1px solid #fff;
 }
-#tab-1:checked ~ .tabs label [for="tab-1"],
-#tab-3:checked ~ .tabs label [for="tab-3"] {
+#tab-1:checked ~ .tabs label[for="tab-1"],
+#tab-3:checked ~ .tabs label[for="tab-3"] {
   border-bottom: 1px solid #fff;
 }
 .info .delivery,
@@ -1488,7 +1490,8 @@ input[type="radio"] {
 	width: 140px;
 	margin: 0px;
 }
-/* ABOUT */
+			/* ABOUT */
+
 .about-item {
 	background-color: #f2f6f8;
 	padding-bottom: 54px;
@@ -1504,7 +1507,8 @@ input[type="radio"] {
 	font-family: "PT Sans", serif;
 	letter-spacing: 0.2px;
 }
-/* - OVERLAY - */
+			/* - OVERLAY - */
+
 .modal-overlay {
 	position: fixed;
 	top: 0;
@@ -1518,7 +1522,7 @@ input[type="radio"] {
 .modal-overlay-show {
 	display: block;
 }
-/* - POPUP - */
+			/* - POPUP - */
 
 .modal-write-us {
 	display: none;
@@ -1734,6 +1738,7 @@ input[type="radio"] {
 }
 
 										/* SYMBOLS */
+
 @font-face {
   font-weight: normal;
   font-style: normal;

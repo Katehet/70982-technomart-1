@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 		<link rel="stylesheet" href="css/normalize.css">
   </head>
   <body class="body">
@@ -39,7 +39,7 @@
 	  		<ul>
 					<li><a>Главная</a></li>
 		  		<li><a href="#">Компания</a></li>
-					<li><a href="../70982-technomart-1/catalog.html">Каталог</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Спецпредложения</a></li>
 					<li><a href="#">Доставка</a></li>
@@ -62,7 +62,9 @@
 				<a class="promo-btn" href="#">Для стройки</a>
 			</div>
 			<div class="slider">
-				<!--Переключатели слайдера-->
+				
+							<!--Переключатели слайдера-->
+				
 				<input type="radio" id="toggle-1" name="toggle" checked>
         <input type="radio" id="toggle-2" name="toggle">
 				<div class="slider-controls">
@@ -225,8 +227,8 @@
 			  <div class="contacts">
 				 <h2 class="block-title">Контакты</h2>
 				 <div class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</div>
-					<div class="find-us"><a href="#"><img  class="map" src="img/map.jpg" alt="map" width="300" height="158"></a></div>
-				 <a class="contacts-btn" href="#">Заблудились? Напишите нам!</a>
+					<div class="find-us"><a href="find-us.html"><img  class="map" src="img/map.jpg" alt="map" width="300" height="158"></a></div>
+				 <a class="contacts-btn" href="write-us.html">Заблудились? Напишите нам!</a>
 			  </div>
 		  </div>
 	</section>
@@ -240,7 +242,7 @@
 				<ul class="bottom-nav-1">
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Новости</a></li>
-					<li><a href="../70982-technomart-1/catalog.html">Каталог</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
@@ -283,7 +285,7 @@
 		<!-- MODAL FEEDBACK -->
 		
 	<div class="modal-write-us">
-		<button type="button" class="modal-close" title="Закрыть"></button>
+		<button type="button" class="modal-clos" name="close-order" title="Закрыть"></button>
 		<form action="#" method="post">
 			<div class="input-block">
 			<label>Ваше имя:</label><input name="u-name" type="text" placeholder="Представьтесь, пожалуйста">
@@ -301,7 +303,7 @@
 		<!-- MODAL MAP -->
 		
 	<div class="modal-map">
-		<button type="button" class="modal-close" title="Закрыть"></button>
+		<button type="button" class="modal-clos" title="Закрыть"></button>
 		<div id="yandex-map"></div>
 	</div>
 		
@@ -318,8 +320,8 @@
 			</div>
 	</div>
 		
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XvDFCmxDJ3i2BGBewM3llk8nIKGAEDk8&amp;width=940&amp;height=446&amp;id=yandex-map"></script>
+<!--		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XvDFCmxDJ3i2BGBewM3llk8nIKGAEDk8&amp;width=940&amp;height=446&amp;id=yandex-map"></script>-->
 
-		<script src="js/popup_ind.js"></script>
+		<script src="js/popup-ind.js"></script>
   </body>
 </html>
