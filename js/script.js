@@ -1,3 +1,43 @@
+			// BOOKING GOODS
+
+var openToBuy = document.querySelectorAll(".buy-it-btn");
+var openToBook = document.querySelectorAll(".book-it-btn");
+var modalOrder = document.querySelector(".modal-order");
+var clickClose = modalOrder.querySelector(".modal-close");
+var clickCloseToo = modalOrder.querySelector(".keep-on-btn");
+
+for (var i = 0; i < openToBuy.length; i++) {
+	clickToBuy(openToBuy[i]);
+};
+function clickToBuy(openToBuy) {
+	openToBuy.addEventListener("click", function(event) {
+		event.preventDefault();
+		modalOrder.classList.add("modal-order-show");
+	})
+};
+
+for (var j = 0; j < openToBook.length; j++) {
+	clickToBook(openToBook[j]);
+};
+function clickToBook(openToBook) {
+	openToBook.addEventListener("click", function(event) {
+		event.preventDefault();
+		modalOrder.classList.add("modal-order-show");
+	})
+};
+
+clickClose.addEventListener("click", function(event) {
+	event.preventDefault();
+	modalOrder.classList.remove("modal-order-show");
+	});
+
+clickCloseToo.addEventListener("click", function(event) {
+	event.preventDefault();
+	modalOrder.classList.remove("modal-order-show");
+});
+
+			// WRITE-US FORM
+
 var link = document.querySelector(".contacts-btn");
 var popup = document.querySelector(".modal-write-us");
 var close = document.querySelector(".modal-close");
@@ -7,7 +47,6 @@ var name = popup.querySelector("[name=u-name]");
 var mail = popup.querySelector("[name=u-email]");
 var feedback = popup.querySelector("textarea");
 
-			// WRITE-US FORM
 
 link.addEventListener("click", function(event) {
 	event.preventDefault();
@@ -55,6 +94,8 @@ openMap.addEventListener("click", function(event) {
 openMap.addEventListener("click", function(event) {
 	event.preventDefault();
 	popupMap.classList.add("modal-map-show");
+	closeMap.style.right="-23px";
+	closeMap.style.top="-4px";
 });
 closeMap.addEventListener("click", function(event) {
 	event.preventDefault();
@@ -63,42 +104,4 @@ closeMap.addEventListener("click", function(event) {
 closeMap.addEventListener("click", function(event) {
 	event.preventDefault();
 	popupMap.classList.remove("modal-map-show");
-});
-
-			// BOOKING GOODS
-
-var openToBuy = document.querySelectorAll(".buy-it-btn");
-var openToBook = document.querySelectorAll(".book-it-btn");
-var modalOrder = document.querySelector(".modal-order");
-var clickClose = document.querySelector(".modal-close");
-var clickCloseToo = document.querySelector(".keep-on-btn");
-
-for (var i = 0; i < openToBuy.length; i++) {
-	clickToBuy(openToBuy[i]);
-};
-function clickToBuy(openToBuy) {
-	openToBuy.addEventListener("click", function(event) {
-		event.preventDefault();
-		modalOrder.classList.add("modal-order-show");
-	})
-};
-
-for (var j = 0; j < openToBook.length; j++) {
-	clickToBook(openToBook[j]);
-};
-function clickToBook(openToBook) {
-	openToBook.addEventListener("click", function(event) {
-		event.preventDefault();
-		modalOrder.classList.add("modal-order-show");
-	})
-};
-
-clickClose.addEventListener("click", function(event) {
-event.preventDefault();
-modalOrder.classList.remove("modal-order-show");
-});
-
-clickCloseToo.addEventListener("click", function(event) {
-event.preventDefault();
-modalOrder.classList.remove("modal-order-show");
 });

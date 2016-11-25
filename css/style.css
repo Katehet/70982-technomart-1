@@ -63,14 +63,14 @@ a {
 }
 .search {
   display: inline-block;
-	vertical-align: top;
+  vertical-align: top;
   padding: 0px;
-	position: relative;
+  position: relative;
 }
 .icon-search::before {
   content: "🔍";
 }
-.search input [type="search"] {
+.search input[type="search"] {
   height: 42px;
   width: 270px;
   margin: 0;
@@ -83,11 +83,11 @@ a {
   border-width: 0;
   outline: none;
 }
-.search ::-webkit-input-placeholder {
-		color:#fff;
+.search::-webkit-input-placeholder {
+		color:#ffffff;
 		font-size: 17px;
 }
-.search :focus::-webkit-input-placeholder {
+.search:focus::-webkit-input-placeholder {
 	color: transparent;
 }
 .search .icon-search {
@@ -1445,12 +1445,13 @@ input[type="radio"] {
 	margin-left: 20px;
 }
 
-/* - GOODS CARTS - */
+			/* - GOODS CARTS - */
 
 .item-list .item:nth-child(3n) {
 	margin-right: 0px;
 }
-/* - // - */
+			
+			/* - // - */
 
 .page-number {
 	float: left;
@@ -1522,7 +1523,7 @@ input[type="radio"] {
 .modal-overlay-show {
 	display: block;
 }
-			/* - POPUP - */
+			/* - POPUPS - */
 
 .modal-write-us {
 	display: none;
@@ -1609,6 +1610,7 @@ input[type="radio"] {
 	border: none;
 	outline: none;
 	cursor: pointer;
+	z-index: 1000;
 }
 .modal-close::after,
 .modal-close::before {
@@ -1678,7 +1680,10 @@ input[type="radio"] {
 	background-color: #ffffff;
 	cursor: pointer;
 }
+
 .checkout-btn {
+	display: inline-block;
+	width: 192px;
 	background-color: #ee3643;
 	color: #ffffff;
 	margin-right: 20px;
