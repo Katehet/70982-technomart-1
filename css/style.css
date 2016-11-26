@@ -693,7 +693,7 @@ main {
   right: -20px;
   width: 0px;
   height: 0px;
-  content: '';
+  content: "";
   border: 20px solid #ffffff;
   border-left-color: #ee3643;
 	border-radius: 4px;
@@ -836,9 +836,9 @@ input[type="radio"] {
 .info .credit {
   display: none;
 }
-#tab-1:checked~ .info .delivery,
-#tab-2:checked~ .info .guaranty,
-#tab-3:checked~ .info .credit {
+#tab-1:checked ~ .info .delivery,
+#tab-2:checked ~ .info .guaranty,
+#tab-3:checked ~ .info .credit {
   display: block;
 }
 .info-text {
@@ -1725,8 +1725,8 @@ input[type="radio"] {
 	top:50%;
 	left: 50%;
 	margin-top: -180px;
-	margin-left: -470px;
-	width: 940px;
+	margin-left: -465px;
+	width: 890px;
 	height: 446px;
 	z-index: 100;
 	background: #e9e5dc url("../img/modal-map.jpg");
