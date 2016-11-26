@@ -70,34 +70,47 @@ a {
 .icon-search::before {
   content: "🔍";
 }
-.search input[type="search"] {
-  height: 42px;
-  width: 270px;
-  margin: 0;
-  padding: 0;
-  padding-left: 48px;
-  box-sizing: border-box;
-  font-size: 17px;
-  line-height: 18px;
-  background-color: #293449;
-  border-width: 0;
-  outline: none;
+input[type="search"] {
+    height: 42px;
+    width: 270px;
+    margin: 0;
+    padding: 0;
+    padding-left: 48px;
+    box-sizing: border-box;
+    font-size: 17px;
+    line-height: 18px;
+    background-color: #293449;
+    border-width: 0;
+    outline: none;
 }
-.search::-webkit-input-placeholder {
-		color:#ffffff;
-		font-size: 17px;
+
+.search ::-webkit-input-placeholder {
+	color:#fff;
 }
-.search:focus::-webkit-input-placeholder {
+::-moz-placeholder {/* Firefox 19+ */
+	color:#fff;
+}
+:-moz-placeholder {/* Firefox 18- */
+	color:#fff;
+}
+:-ms-input-placeholder {/* Firefox 18- */
+	color:#fff;
+}
+:focus::-webkit-input-placeholder {color: transparent;
+}
+:focus::-moz-placeholder {
 	color: transparent;
 }
+
 .search .icon-search {
-  position: absolute;
-  top: 28%;
-  left: 15px;
-  font-size: 17px;
-  line-height: 18px;
-  color: rgba(255, 255, 255, .3);
+    position: absolute;
+    top: 28%;
+    left: 14px;
+    font-size: 17px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, .3);
 }
+
 input[type="search"]:hover {
 	background-color: #212a3a;
 }
@@ -110,13 +123,9 @@ input[type="search"]:focus {
 input[type="search"]:focus+.icon-search {
 	color: #ee3643;
 }
-::-webkit-input-placeholder {
-	font-size: 13px;
-}
-:focus::-webkit-input-placeholder {
-	color: transparent;
-}
-/* -- */
+
+			/* -- */
+
 .user-menu {
 	float: right;
 	font-size: 0px;
@@ -177,6 +186,7 @@ input[type="search"]:focus+.icon-search {
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
+	font-family: inherit;
 	color: #ee3643;
 }
 .top-contacts {
@@ -1680,10 +1690,10 @@ input[type="radio"] {
 	background-color: #ffffff;
 	cursor: pointer;
 }
-
 .checkout-btn {
 	display: inline-block;
-	width: 192px;
+	box-sizing: border-box;
+	width: 220px;
 	background-color: #ee3643;
 	color: #ffffff;
 	margin-right: 20px;
